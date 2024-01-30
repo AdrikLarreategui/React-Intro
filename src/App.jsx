@@ -2,10 +2,24 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Person } from './components/Person'
+import PersonClass from './components/PersonClass'
 
 function App() {
   const [count, setCount] = useState(0)
+  return (
+    <>
+    <Person name="Adri" surname="Larrea" age = {38} />
+    <Person name = "John" surname= "Rotten" age = {67} />
+    <Person name = "Patata" surname= "Pato" age = {3}/>
 
+    <PersonClass name = "Txalo" surname = "Madari" age = {34}></PersonClass>
+    <PersonClass name = "Lourdes" surname = "Aldama" age = {63}></PersonClass>
+    <PersonClass name = "Leire" surname = "Garay" age = {48}></PersonClass>
+    </>
+  )}
+
+  function App() {
   return (
     <>
       <div>
